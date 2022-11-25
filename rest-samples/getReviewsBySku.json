@@ -1,0 +1,11 @@
+{
+  "reviews": [
+    {
+      "id": "customer-id-1",
+      "name": "Andrea Good",
+      "stars": 5,
+      "comments": "Very good"
+    }
+  ],
+  "stars": "5.00"
+}
