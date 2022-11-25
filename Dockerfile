@@ -10,7 +10,6 @@ RUN yarn install
 COPY ./rest-samples/ ./rest-samples/
 COPY ./.meshrc.yml ./
 
-RUN yarn refresh
 RUN yarn build
 
 EXPOSE 4000
