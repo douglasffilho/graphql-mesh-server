@@ -13,6 +13,10 @@
 
   <img alt="Commitlint" src="https://img.shields.io/badge/commitlint-&check;-green.svg">
 
+  <a href="https://the-guild.dev/graphql/mesh/docs" rel="nofollow">
+    <img alt="Github top language" src="https://img.shields.io/badge/GraphQL_Mesh-16.x-green.svg">
+  </a>
+
   <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg">
 
   <a href="https://graphql-api-dev.up.railway.app" rel="nofollow">
