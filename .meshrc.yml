@@ -1,39 +1,6 @@
 sources:
-  - name: Products
+  - name: Kits
     handler:
-      jsonSchema:
-        baseUrl: https://product-api-dev.up.railway.app
-        operations:
-          - type: Query
-            field: product
-            path: /v1/products/by-sku/{args.sku}
-            method: GET
-            responseSample: ./rest-samples/getProductBySku.json
-  - name: Reviews
-    handler:
-      jsonSchema:
-        baseUrl: https://review-api-dev.up.railway.app
-        operations:
-          - type: Query
-            field: reviews
-            path: /v1/reviews/{args.sku}
-            method: GET
-            responseSample: ./rest-samples/getReviewsBySku.json
-          
-          # - type: Mutation
-          #   field: createUser
-          #   path: /user
-          #   method: POST
-          #   requestSample: ./createUserRequest.json
-          #   responseSample: ./createUserResponse.json
-          # - type: Mutation
-          #   field: updateUser
-          #   path: /user/{args.id}
-          #   method: PUT
-          #   requestSample: ./updateUserRequest.json
-          #   responseSample: ./updateUserResponse.json
-          # - type: Mutation
-          #   field: deleteUser
-          #   path: /user/{args.id}
-          #   method: DELETE
-          #   responseSample: ./deleteUserResponse.json
+      openapi:
+        endpoint: https://private-8bdaa-solfacilecostorecatalogcoreservice.apiary-mock.com
+        source: ./openapi.json # need to consume API OpenAPI json like https://private-8bdaa-solfacilecostorecatalogcoreservice.apiary-mock.com/openapi.json
