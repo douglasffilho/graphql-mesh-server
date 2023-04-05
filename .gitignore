@@ -10,7 +10,7 @@
 
 # production
 /.serverless
-/.mesh
+.mesh
 
 # misc
 .DS_Store

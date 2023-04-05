@@ -1,5 +1,7 @@
 // .eslintignore
 node_modules
+.mesh
 .serverless
 *.json
 *.yml
+index.ts
