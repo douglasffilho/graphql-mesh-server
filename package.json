@@ -9,10 +9,11 @@
   "scripts": {
     "prepare": "husky install",
     "clean": "chmod +x clean && ./clean",
+    "clean:build": "rm -rf ./.mesh",
     "build": "mesh build",
-    "start": "yarn start:prod",
-    "start:prod": "mesh start",
-    "start:dev": "mesh dev"
+    "prebuild": "mesh build",
+    "start": "mesh start",
+    "dev": "mesh dev"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -45,6 +46,7 @@
     "prettier": "2.8.7"
   },
   "dependencies": {
+    "@envelop/core": "3.0.6",
     "@graphql-mesh/cli": "0.82.31",
     "@graphql-mesh/openapi": "0.36.0",
     "graphql": "16.6.0"

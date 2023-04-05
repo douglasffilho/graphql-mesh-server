@@ -1,0 +1,2 @@
+KITS_API=http://localhost:8000 yarn build
+KITS_API=http://localhost:8000 yarn start

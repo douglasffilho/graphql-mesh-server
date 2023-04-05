@@ -1,6 +1,11 @@
+serve:
+  endpoint: /api/graphql
+  playground: true
 sources:
   - name: Kits
     handler:
       openapi:
-        endpoint: https://private-8bdaa-solfacilecostorecatalogcoreservice.apiary-mock.com
-        source: ./openapi.json # need to consume API OpenAPI json like https://private-8bdaa-solfacilecostorecatalogcoreservice.apiary-mock.com/openapi.json
+        endpoint: "{env.KITS_API}"
+        source: "{env.KITS_API}/openapi.json"
+        operationHeaders:
+          Content-Type: application/json
