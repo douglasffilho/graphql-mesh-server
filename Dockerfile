@@ -1,5 +1,9 @@
 FROM node:16.17.0
 
+ARG kits_api
+
+ENV KITS_API $kits_api
+
 WORKDIR /app
 
 COPY ./package.json ./
