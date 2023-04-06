@@ -1,8 +1,8 @@
 FROM node:16.17.0
 
-ARG KITS_API
+ARG kitsapi
 
-ENV KITS_API $KITS_API
+ENV KITS_API $kitsapi
 
 WORKDIR /app
 

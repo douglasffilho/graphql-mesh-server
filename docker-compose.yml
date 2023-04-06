@@ -6,6 +6,6 @@ services:
     build:
       context: .
       args:
-        KITS_API: https://private-8bdaa-solfacilecostorecatalogcoreservice.apiary-mock.com
+        kitsapi: https://private-8bdaa-solfacilecostorecatalogcoreservice.apiary-mock.com
     ports:
       - 4000:4000
