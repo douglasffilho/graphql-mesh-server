@@ -1,11 +1,12 @@
 FROM node:16.17.0
 
-ARG kits_api
+ARG KITS_API
 
-ENV KITS_API $kits_api
+ENV KITS_API $KITS_API
 
 WORKDIR /app
 
+COPY ./.git ./.git
 COPY ./package.json ./
 COPY ./yarn.lock ./
 

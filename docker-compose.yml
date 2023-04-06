@@ -1,0 +1,11 @@
+version: '3.2'
+
+services:
+  graphql_mesh_server:
+    container_name: graphql_mesh_server
+    build:
+      context: .
+      args:
+        KITS_API: https://private-8bdaa-solfacilecostorecatalogcoreservice.apiary-mock.com
+    ports:
+      - 4000:4000
