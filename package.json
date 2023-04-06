@@ -12,7 +12,6 @@
     "clean": "chmod +x clean && ./clean && yarn clean:build",
     "clean:build": "chmod +x cleanBuild && ./cleanBuild",
     "build": "mesh build",
-    "prebuild": "mesh build",
     "start": "mesh start",
     "dev": "mesh dev"
   },
@@ -47,7 +46,8 @@
     "husky": "8.0.3",
     "jest": "29.5.0",
     "lint-staged": "13.2.0",
-    "prettier": "2.8.7"
+    "prettier": "2.8.7",
+    "vercel": "28.18.3"
   },
   "dependencies": {
     "@envelop/core": "3.0.6",

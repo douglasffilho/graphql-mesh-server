@@ -31,6 +31,7 @@
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#pencil2-commit-changes">Commit Changes</a> &#xa0; | &#xa0;
+  <a href="#hammer-build-for-production">Build for Production</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/douglasffilho" target="_blank">Author</a>
 </p>
@@ -67,12 +68,12 @@ $ git clone https://github.com/douglasffilho/graphql-mesh-server
 $ cd graphql-mesh-server
 
 # Install dependencies
-$ yarn
+$ yarn install
 
 # Run the project
-$ yarn start:dev
+$ yarn dev
 
-# The server will initialize in the <http://localhost:8080>
+# The server will initialize in the <http://localhost:4000>
 ```
 
 ## :pencil2: Commit Changes ##
@@ -83,6 +84,13 @@ $ yarn
 
 # Now, you can commit changes only by typing git commit (thanks to husky, commitizen and commitlint features)
 $ git commit
+```
+
+## :hammer: Build for Production ##
+
+```bash
+# Run build to generate static files and schemas
+$ yarn build
 ```
 
 ## :memo: License ##

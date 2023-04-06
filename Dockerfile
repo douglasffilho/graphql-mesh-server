@@ -7,7 +7,6 @@ COPY ./yarn.lock ./
 
 RUN yarn install
 
-COPY ./rest-samples/ ./rest-samples/
 COPY ./.meshrc.yml ./
 
 RUN yarn build
