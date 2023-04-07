@@ -1,12 +1,10 @@
 FROM node:16.17.0
 
-ARG kitsapi
-
-ENV KITS_API $kitsapi
+ENV KITS_API https://private-8bdaa-solfacilecostorecatalogcoreservice.apiary-mock.com
+ENV PORT 8080
 
 WORKDIR /app
 
-COPY ./.git ./.git
 COPY ./package.json ./
 COPY ./yarn.lock ./
 
@@ -16,6 +14,6 @@ COPY ./.meshrc.yml ./
 
 RUN yarn build
 
-EXPOSE 4000
+EXPOSE 8080
 
 CMD ["yarn", "start"]

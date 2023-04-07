@@ -1,4 +1,4 @@
-# fly.toml file generated for graphql-mesh-server on 2023-04-06T18:03:16-03:00
+# fly.toml file generated for graphql-mesh-server on 2023-04-07T11:26:46-03:00
 
 app = "graphql-mesh-server"
 kill_signal = "SIGINT"
@@ -7,10 +7,11 @@ primary_region = "gru"
 
 [env]
   KITS_API = "https://private-8bdaa-solfacilecostorecatalogcoreservice.apiary-mock.com"
+  PORT = "8080"
 
 [[services]]
   protocol = "tcp"
-  internal_port = 4000
+  internal_port = 8080
   processes = ["app"]
 
   [[services.ports]]
