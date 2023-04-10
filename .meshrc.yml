@@ -1,4 +1,6 @@
 serve:
+  cors:
+    origin: "*"
   endpoint: /graphql
   playground: true
 sources:
